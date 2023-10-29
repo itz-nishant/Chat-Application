@@ -1,0 +1,27 @@
+<!-- login.component.html -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="login-heading">
+            <h2>Login</h2>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="password" placeholder="Enter your password">
+          </div>
+          <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+            {{ errorMessage }}
+          </div>
+          <button class="btn btn-primary" (click)="login()">Login</button>
+          <p class="create-account-link">Don't have an account? <a routerLink="/signup">Create New Account</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

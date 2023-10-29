@@ -1,0 +1,35 @@
+<!-- signup.component.html -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="signup-heading">
+            <h2>Sign Up</h2>
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="password" placeholder="Enter your password">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Confirm your password">
+          </div>
+          <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+            {{ errorMessage }}
+          </div>
+          <button class="btn btn-primary" (click)="signup()">Sign Up</button>
+          <p class="login-link">Already have an account? <a routerLink="/login">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

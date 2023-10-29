@@ -1,0 +1,19 @@
+.navbar {
+    margin-bottom: 20px; 
+  }
+  
+  .navbar-nav.m .btn {
+    margin-right: 10px; 
+  }
+  
+  .navbar-nav.m .btn {
+    margin-left: 10px; 
+  }
+.mainNav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

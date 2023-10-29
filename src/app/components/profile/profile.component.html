@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="profile-picture">
+              <img [src]="profilePictureUrl || 'assets/default-profile-picture.png'" alt="Profile Picture">
+              <div class="profile-picture-actions">
+                <span class="icon" (click)="uploadProfilePicture()"><i class="fas fa-upload"></i></span>
+                <span class="icon" (click)="deleteProfilePicture()"><i class="fas fa-trash-alt"></i></span>
+              </div>
+            </div>
+            <h2 class="profile-name">
+              <span *ngIf="!isDisplayNameEditing">{{ user?.displayName }}</span>
+              <span *ngIf="isDisplayNameEditing">
+                <input type="text" class="form-control" id="displayName" [value]="user?.displayName || ''" [disabled]="!isDisplayNameEditing" (input)="onDisplayNameChange($event)">
+                <button class="btn btn-primary mt-2" (click)="saveDisplayName()">Update</button>
+              </span>
+              <span class="edit-icon" *ngIf="!isDisplayNameEditing" (click)="enableDisplayNameEditing()"><i class="fas fa-edit"></i></span>
+            </h2>
+            <p class="profile-email">{{ user?.email }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

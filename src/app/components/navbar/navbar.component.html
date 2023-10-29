@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="mainNav">
+       <div>
+        <a class="navbar-brand" >Chat App</a>
+       </div>
+        <div class="">
+          <ul class="navbar-nav ">
+            <ng-container *ngIf="user; else loggedOutLinks" >
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/chat">Chat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-danger" (click)="logout()">Logout</button>
+              </li>
+              
+            </ng-container>
+            <ng-template #loggedOutLinks>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/signup">Signup</a>
+              </li>
+            </ng-template>
+          </ul>
+        </div>
+    </div>
+   
+  </nav>
+  

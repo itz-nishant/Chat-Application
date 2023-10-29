@@ -1,0 +1,71 @@
+/* chat.component.css */
+.container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .chat-message {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .my-message {
+    background-color: #4273e5;
+    color: white;
+  }
+  
+  .other-message {
+    background-color: #fff;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .selected-user {
+    background-color: #4273e5;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .btn-primary {
+    background-color: #4273e5;
+    border-color: #4273e5;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2b5db0;
+    border-color: #2b5db0;
+  }
+
+  .no-user-message {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+  

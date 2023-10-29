@@ -1,0 +1,79 @@
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-picture-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .profile-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .profile-name span {
+    margin-right: 10px;
+  }
+  
+  .profile-email {
+    text-align: center;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Additional styles for the input field and the "Save" button */
+  .form-group input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  .edit-icon {
+    cursor: pointer;
+    color: #aaa;
+    font-size: 1.2rem;
+  }
+  
+  .edit-icon:hover {
+    color: #333;
+  }
+  
+  /* Styling for the "Save" button */
+  .btn-primary {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional styles for the card */
+  .card-body {
+    padding: 20px;
+  }
+  
